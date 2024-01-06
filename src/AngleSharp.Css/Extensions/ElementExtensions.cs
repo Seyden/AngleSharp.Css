@@ -230,16 +230,16 @@ namespace AngleSharp.Dom
                 {
                     requiredLineBreakCounts.TryGetValue(startIndex, out var startIndexCount);
 
-                    if (startIndexCount < 2)
+                    if (startIndexCount < 1)
                     {
-                        requiredLineBreakCounts[startIndex] = 2;
+                        requiredLineBreakCounts[startIndex] = 1;
                     }
 
                     requiredLineBreakCounts.TryGetValue(sb.Length, out var endIndexCount);
 
-                    if (endIndexCount < 2)
+                    if (endIndexCount < 1)
                     {
-                        requiredLineBreakCounts[sb.Length] = 2;
+                        requiredLineBreakCounts[sb.Length] = 1;
                     }
                 }
 
